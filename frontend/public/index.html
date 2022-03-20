@@ -14,6 +14,9 @@
     <div id="root">
     </div>
     <div id="handlebars">
+      <div id="instructions">
+        {{instructions}}
+      </div>
       <div id="board">
         {{#each cells}}
           {{#if link}}
@@ -25,7 +28,7 @@
       </div>
       <div id="bottombar">
         <a href="/newgame"><button>New Game</button></a>
-        <button>Undo</button>
+        <a herf="/undo"><button>Undo</button></a>
       </div>
     </div>
     
